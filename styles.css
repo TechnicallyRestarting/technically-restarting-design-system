@@ -1,0 +1,459 @@
+/* 
+Color Palette
+Midnight Black: #121212
+Bold Gold: #C99A00
+Light Gold: #F4D35E
+Slate Gray: #444444
+Snow White: #F8F8F8
+Herb Green: #4F7A52
+Deep Moss: #2E4A35
+*/
+
+:root {
+
+    --midnight-black: #121212;
+    --bold-gold: #C99A00;
+    --light-gold: #F4D35E;
+    --slate-gray: #444444;
+    --snow-white: #F8F8F8;
+    --herb-green: #4F7A52;
+    --deep-moss: #2E4A35;
+
+}
+
+/* ---------- General ---------- */
+
+body {
+    background: linear-gradient(
+        180deg,
+        #151515 0%,
+        #101010 100%);
+    color: var(--snow-white);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---------- Main ---------- */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.style-section {
+    border: 2px solid var(--slate-gray);
+    border-radius: 12px;
+    padding: 35px;
+    margin: 40px 0;
+    background-color: #181818;
+}
+
+.style-section h2 {
+    font-family: "Cinzel", serif;
+    color: var(--bold-gold);
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--slate-gray);
+    padding-bottom: 12px;
+}
+
+/* ---------- Color Cards ---------- */
+
+
+
+.color-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.color-card {
+    width: 220px;
+    background-color: #1d1d1d;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--slate-gray);
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.color-card h3 {
+    color: var(--bold-gold);
+    margin: 16px 0 8px;
+}
+
+.color-card p {
+    margin: 8px;
+}
+
+.color-card p:nth-of-type(1) {
+    font-family: "Fira Code", monospace;
+    color: #cccccc;
+}
+
+.color-card p:nth-of-type(2) {
+    color: var(--snow-white);
+    padding-bottom: 16px;
+}
+
+.color-box {
+
+    height: 100px;
+
+}
+
+.black .color-box {
+
+    background-color: var(--midnight-black);
+
+}
+
+.gold .color-box {
+   background-color: var(--bold-gold);
+}
+
+.gray .color-box {
+    background-color: var(--slate-gray);
+}
+
+.white .color-box {
+    background-color: var(--snow-white);
+}
+
+.light-gold .color-box {
+    background-color: var(--light-gold);
+}
+
+.herb-green .color-box {
+    background-color: var(--herb-green);
+}
+
+.deep-moss .color-box {
+    background-color: var(--deep-moss);
+}
+.site-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.site-header h1 {
+    font-family: "Cinzel", serif;
+    font-size: 2.8rem;
+    color: var(--bold-gold);
+    margin-bottom: 10px;
+}
+
+
+.site-header p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #CCCCCC;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ---------- Font Cards ---------- */
+
+.font-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.font-card {
+    width: 300px;
+    background-color: var(--midnight-black);
+    border: 1px solid var(--slate-gray);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.font-card h3 {
+    color: var(--bold-gold);
+    margin-top: 0;
+}
+
+.font-example {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.font-use {
+    color: #cccccc;
+    border-top: 1px solid var(--slate-gray);
+    padding-top: 12px;
+    margin-top: 16px;
+}
+
+.cinzel-font {
+    font-family: "Cinzel", serif;
+}
+
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+}
+
+.fira-font {
+    font-family: "Fira Code", monospace;
+}
+
+.color-card,
+.font-card {
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.color-card,
+.font-card,
+.text-style-card {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.color-card:hover,
+.font-card:hover,
+.text-style-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--bold-gold);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+.navbar {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    margin-bottom: 50px;
+
+    padding: 20px;
+
+    border-top: 1px solid var(--slate-gray);
+
+    border-bottom: 1px solid var(--slate-gray);
+
+}
+
+.navbar a {
+
+    text-decoration: none;
+
+    color: var(--snow-white);
+
+    font-weight: bold;
+
+    transition: color .25s ease;
+
+}
+
+.navbar a:hover {
+
+    color: var(--bold-gold);
+
+}
+
+/* ---------- Text Style Cards ---------- */
+
+.text-style-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.text-style-card {
+    width: 300px;
+    background-color: var(--midnight-black);
+    border: 1px solid var(--slate-gray);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.text-style-card h3 {
+    color: var(--bold-gold);
+    margin-top: 0;
+}
+
+.style-example {
+    border-bottom: 1px solid var(--slate-gray);
+    padding-bottom: 16px;
+}
+
+.heading-example {
+    font-family: "Cinzel", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bold-gold);
+}
+
+.subheading-example {
+    font-family: "Cinzel", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bold-gold);
+}
+
+.body-example {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.text-style-card li {
+    font-family: "Fira Code", monospace;
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+.brand-name {
+
+    font-family: "Fira Code", monospace;
+
+    color: var(--herb-green);
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    font-size: .95rem;
+
+    margin-bottom: 10px;
+
+}
+
+.tagline {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #CCCCCC;
+
+    font-size: 1.2rem;
+
+    line-height: 1.7;
+
+}
+
+.version {
+
+    margin-top: 25px;
+
+    color: var(--herb-green);
+
+    font-size: .9rem;
+
+    font-family: "Fira Code", monospace;
+
+}
+
+.site-header::after {
+
+    content: "";
+
+    display: block;
+
+    width: 220px;
+
+    height: 3px;
+
+    background: var(--bold-gold);
+
+    margin: 35px auto 0;
+
+    border-radius: 999px;
+
+}
+
+/* ---------- Design Principles ---------- */
+
+.principles-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.principle-card {
+    width: 300px;
+    background-color: var(--midnight-black);
+    border: 1px solid var(--slate-gray);
+    border-radius: 12px;
+    padding: 24px;
+    transition: .25s;
+}
+
+.principle-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--bold-gold);
+}
+
+.principle-card h3 {
+    color: var(--bold-gold);
+    margin-top: 0;
+}
+
+/* ---------- Components ---------- */
+
+.component-container {
+    display: flex;
+    justify-content: center;
+}
+
+.component-card {
+    width: 360px;
+    background-color: var(--midnight-black);
+    border: 1px solid var(--slate-gray);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+}
+
+.component-card h3 {
+    color: var(--bold-gold);
+    margin-top: 0;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.primary-btn {
+    background-color: var(--bold-gold);
+    color: var(--midnight-black);
+    border: 2px solid var(--bold-gold);
+}
+
+.primary-btn:hover {
+    background-color: var(--light-gold);
+    border-color: var(--light-gold);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--bold-gold);
+    border: 2px solid var(--bold-gold);
+}
+
+.secondary-btn:hover {
+    background-color: var(--bold-gold);
+    color: var(--midnight-black);
+}
